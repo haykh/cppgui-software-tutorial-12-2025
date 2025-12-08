@@ -54,7 +54,7 @@ auto main() -> int {
     &state,
     [&]() {
       if (state.get<bool>("show_imgui_demo")) {
-        ImGui::ShowDemoWindow();
+        ImGui::ShowDemoWindow(&state.get<bool>("show_imgui_demo"));
       }
       if (ImGui::Begin("Test Window")) {
         ImGui::Text("Pick a random color");
