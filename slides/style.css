@@ -1,0 +1,16 @@
+.reveal h1 {
+  font-size: 2em;
+}
+
+.reveal h2 {
+  font-size: 1.6em;
+}
+
+.reveal h3 {
+  font-size: 1.3em;
+}
+
+.reveal footer {
+  font-size: 0.6em;
+  font-style: italic;
+}

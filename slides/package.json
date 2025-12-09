@@ -1,0 +1,16 @@
+{
+  "name": "slides",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "reveal.js": "^5.2.1",
+    "vite": "^7.2.7"
+  }
+}
