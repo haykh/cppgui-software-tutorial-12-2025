@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/slides/",
+  base: "./",
   plugins: [
     {
       name: "reload",
@@ -9,9 +9,7 @@ export default defineConfig({
         const { ws, watcher } = server;
         watcher.on("change", (file) => {
           if (file.endsWith(".md")) {
-            ws.send({
-              type: "full-reload",
-            });
+            server.ws.send({ type: "full-reload" });
           }
         });
       },

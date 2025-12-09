@@ -48,14 +48,15 @@ pkgs.mkShell {
     ]
     ++ xlibs;
 
-  LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath ([
-    pkgs.stdenv.cc.cc
-    pkgs.zlib
-  ]);
+  LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath (
+    [
+      pkgs.stdenv.cc.cc
+      pkgs.zlib
+    ]
+    ++ xlibs
+  );
 
   shellHook = ''
-    export LD_LIBRARY_PATH=${pkgs.lib.makeLibraryPath xlibs}:$LD_LIBRARY_PATH
-
     echo -e "${name} nix-shell activated"
   '';
 
