@@ -88,6 +88,8 @@ with dpg.window(label="Example Window"):
             )
         dpg.bind_item_theme("scatter_series", "scatter_theme")
 
+dpg.show_imgui_demo()
+
 dpg.create_viewport(title="dpg example", width=1280, height=1024)
 
 dpg.set_viewport_clear_color([32, 32, 64, 255])

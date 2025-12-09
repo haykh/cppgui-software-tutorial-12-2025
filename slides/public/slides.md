@@ -47,3 +47,12 @@ repo for the tutorial: [github.com/haykh/cppgui-software-tutorial-12-2025](https
 - plotting not natively supported (need, e.g., `ImPlot`)
 - mainly relies on software rasterization (`ImPlot` has no native support for shaders)
 - needs a bunch of boilerplate code to get up and running (designed for many [`OpenGL` implementations](https://github.com/ocornut/imgui/tree/master/backends))
+
+
+---
+
+## potential future topics
+
+- scientific visualization in `Blender`: [`blend-et`](https://github.com/haykh/blend-et)
+- cpu/gpu-compatible `c++` with [`Kokkos`](https://kokkos.org/kokkos-core-wiki/)
+- gpu-computing with `WebGL` -- introduction to [compute shaders and GPGPU](https://alain.xyz/blog/gpgpu-compute-concepts)
