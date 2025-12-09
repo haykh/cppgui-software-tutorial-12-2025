@@ -26,6 +26,15 @@ pkgs.mkShell {
     vscode-langservers-extracted
     black
     pyright
+
+    nodePackages.nodejs
+    emmet-ls
+    typescript-language-server
+    taplo
+    yaml-language-server
+    prettierd
+    eslint
+    mdformat
   ];
 
   LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath ([
