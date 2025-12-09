@@ -1,3 +1,6 @@
 .cache/
 build/
 imgui.ini
+
+.venv
+__pycache__/
